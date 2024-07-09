@@ -3,12 +3,6 @@ import { FiltersContext } from "../context/filters.jsx"
 
 export function useFilters () {
 
-
-    /*  const [filters, setFilters] = useState(
-        {
-        category: 'all',
-        minPrice: 0
-      }) */
     const {filters,setFilters} = useContext(FiltersContext)
     
     
@@ -24,6 +18,6 @@ export function useFilters () {
       })
     }
   
-    return {filterProducts, setFilters}
+    return {filters, filterProducts, setFilters}
   }
   
