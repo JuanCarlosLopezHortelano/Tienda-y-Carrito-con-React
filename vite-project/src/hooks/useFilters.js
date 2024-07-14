@@ -5,7 +5,7 @@ export function useFilters () {
 
     const {filters,setFilters} = useContext(FiltersContext)
     
-    
+    //filter of products
     const filterProducts = (products) => {
       return products.filter(product => {
         return (
